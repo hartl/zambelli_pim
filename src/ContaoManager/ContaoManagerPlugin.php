@@ -23,7 +23,7 @@ class ContaoManagerPlugin implements BundlePluginInterface, RoutingPluginInterfa
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create('Netprofit\ZambelliPim\NetprofitZambelliPim')
+            BundleConfig::create('Netprofit\ZambelliPim\NetprofitZambelliPimBundle')
                 ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle']),
         ];
     }
