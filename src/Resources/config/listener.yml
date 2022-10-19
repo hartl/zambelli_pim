@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        public: true
+
+    routing_app.user_navigation_listener:
+        class: "Netprofit\\ZambelliPimBundle\\EventListener\\UserNavigationListener"
+        arguments:
+            - "@request_stack"
+            - "@router"
